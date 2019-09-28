@@ -67,11 +67,11 @@ module Filterrific
       opts = {
         :active_column_class => 'filterrific_current_sort_column',
         :inactive_column_class => 'filterrific_sort_column',
-        :ascending_indicator => '⬆',
+        :ascending_indicator => '⮭',
         :default_sort_direction => 'asc',
-        :descending_indicator => '⬇',
+        :descending_indicator => '⮯',
         :html_attrs => {},
-        :label => sort_key.to_s.humanize,
+        :label => sort_key.to_s.titleize,
         :sorting_scope_name => :sorted_by,
         :url_for_attrs => {},
       }.merge(opts)
